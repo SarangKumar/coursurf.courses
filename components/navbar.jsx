@@ -39,9 +39,8 @@ const Navbar = () => {
           <p className='p'>Coursurf</p>
         </Link>
         <HStack className='nav-pagelinks'>
-          {/* <Link href='/'><p>Home</p></Link> */}
           <Link href='/about'><p>About</p></Link>
-          <Link href='/dev'><p>Dev</p></Link>
+          <Link href='/dev'><p>Filter</p></Link>
         </HStack>
       </motion.div>
 
@@ -54,9 +53,8 @@ const Navbar = () => {
           <AiOutlineAlignRight id='ham' color='#333' size={26} />
           <RxCross1 id='cross' color='#333' size={26} />
           <motion.div layout animate={{ type: 'spring' }} className="mobile-links" id='mv'>
-            <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
-            <Link href='/search'>Search</Link>
+            <Link href='/dev'>Filter</Link>
             <Link href='/'>SignUp</Link>
             <Link href='/'>Login</Link>
           </motion.div>
