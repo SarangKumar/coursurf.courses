@@ -49,16 +49,17 @@ const Filter = () => {
 
 
         //set the filter display when the screen size changes
-        window.onresize = (e) => {
-            if (screen.width >= 920) {
-                body.style.display = 'block';
-                clear.style.display = 'block'
-            }
-            else {
-                body.style.display = 'none';
-                clear.style.display = 'none'
-            }
-        }
+     
+        // window.onresize = (e) => {
+        //     if (screen.width >= 920) {
+        //         body.style.display = 'block';
+        //         clear.style.display = 'block'
+        //     }
+        //     else {
+        //         body.style.display = 'none';
+        //         clear.style.display = 'none'
+        //     }
+        // }
 
 
     }, [])
