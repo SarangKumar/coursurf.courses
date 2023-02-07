@@ -32,8 +32,7 @@ const Carddetail = () => {
     ]
 
     const filterFeatures = features.filter(item => item.available);
-    // console.log(filterFeatures)
-
+    
     return (
         <div className={cardD.container}>
             <div className={cardD.one}>

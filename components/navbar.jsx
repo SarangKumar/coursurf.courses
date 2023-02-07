@@ -34,12 +34,14 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <motion.div className='nav-logo'>
-        <img src="image2.png" alt="logo" height={30} width={30} />
-        <p className='p'>Coursurf</p>
+        <Link href='/' className='nav-home'>
+          <img src="image2.png" alt="logo" height={30} width={30} />
+          <p className='p'>Coursurf</p>
+        </Link>
         <HStack className='nav-pagelinks'>
-          <Link href='/'><p>Home</p></Link>
-          <Link href='/'><BsSearch className='nav-images' size={18} /><p>Search</p></Link>
-          <Link href='/about'><AiFillHome className='nav-images' /><p>About</p></Link>
+          {/* <Link href='/'><p>Home</p></Link> */}
+          <Link href='/about'><p>About</p></Link>
+          <Link href='/dev'><p>Dev</p></Link>
         </HStack>
       </motion.div>
 

@@ -40,10 +40,14 @@
     .nav-logo {
         @include flexBox;
 
-        p {
-            font-family: Poppins;
-            padding: 0 0.5rem;
-            font-size: 1.5rem;
+        .nav-home {
+            @include flexBox;
+
+            p {
+                font-family: Poppins;
+                padding: 0 0.5rem;
+                font-size: 1.5rem;
+            }
         }
 
         .nav-pagelinks {
@@ -469,7 +473,7 @@ footer {
 
             select {
                 font-size: 0.75rem;
-                background-color:rgba(199, 199, 199, 0.487);
+                background-color: rgba(199, 199, 199, 0.487);
                 padding: 0.3rem 1rem;
                 border-radius: 5px;
                 font-weight: 800;

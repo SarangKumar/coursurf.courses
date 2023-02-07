@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Card from '../components/cardMain';
 import Search from '../components/search';
 import { CardSkeleton } from '../components/skeleton';
-import Titles from '../components/Titles';
+import Titles from '../components/titles';
 
 export default function Home() {
   return (

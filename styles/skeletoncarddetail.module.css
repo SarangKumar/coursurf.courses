@@ -1,9 +1,10 @@
 .container {
     margin: 1rem;
-    max-width: 55rem;
+    /* max-width: 55rem; */
     min-height: 16rem;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    margin: 1rem;
+    grid-template-columns: 3fr min(13rem);
     border-radius: 10px;
     padding: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -85,7 +86,7 @@
     padding: 1rem;
     /* background-color: pink; */
     border-radius: 0 10px 10px 0;
-    border-left: 1px solid rgba(142, 142, 142, 0.24);
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 
@@ -94,7 +95,7 @@
 .featureItem {
     font-size: 0.75rem;
     padding: 0.2rem 0;
-    border-top: 1px solid rgba(142, 142, 142, 0.24);
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .featureItem:first-child {

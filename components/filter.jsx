@@ -70,7 +70,7 @@ const Filter = () => {
                 <span id='toggleFilter'><MdToc className='filter-svgfilter' size={24} color={'#0a2540'} />Filter by</span>
                 <button id='clear'>Clear All</button>
             </div>
-            <div className='filter-body' id='filterBody' style={{ display: 'block' }}>
+            <div className='filter-body' id='filterBody' style={{display: 'block'}}>
                 <div id='section1'>
                     <ul>
                         <li>
