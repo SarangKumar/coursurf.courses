@@ -54,7 +54,7 @@ const NavbarSearch = () => {
         <nav className='navbarSearch'>
             <div className="one">
                 <Link aria-label="Home page" href='/' className='nav-home'>
-                    <img src="image2.png" alt="website-logo" height={30} width={30} />
+                    <img src="images/logo/logo-192x192.png" alt="website-logo" height={30} width={30} />
                     <p className='p'>Coursurf</p>
                 </Link>
                 <Link aria-label='About page' href='/about'><p>About</p></Link>

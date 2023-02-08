@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav className='navbar'>
       <motion.div className='nav-logo'>
         <Link aria-label="Home page" href='/' className='nav-home'>
-          <img src="image2.png" alt="website-logo" height={30} width={30} />
+          <img src="images/logo/logo-192x192.png" alt="website-logo" height={30} width={30} />
           <p className='p'>Coursurf</p>
         </Link>
         <HStack className='nav-pagelinks'>
