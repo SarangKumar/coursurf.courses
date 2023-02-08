@@ -45,28 +45,26 @@
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 0rem 1rem;
+    padding: 0rem 1.2rem;
     margin-top: -1rem 1rem 0 1rem;
 }
 
 .title {
-    /* @include font($fontSize: 0.9rem, $px: 0, $py: 0); */
     font-size: 0.9rem;
-    padding: 0;
-    padding: 0.3rem 0;
+    margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
 .courseBadges {
-    margin-bottom: 0 0.75rem 0.5rem 0.75rem;
-    overflow: hidden;
-    max-width: calc(3 * (7rem + 0.1rem));
+    /* background-color: wheat; */
+    /* overflow: hidden; */
+    /* width: calc(3 * (7rem + 0.1rem)); */
+    width: 17.5rem;
 }
 
 .tag,
 .tagStar {
-    /* @include font($py: 0, $px: 0.3rem, $fontSize: 0.65rem); */
-    max-width: 7rem;
+    max-width: 6rem;
     font-size: 0.65rem;
     border: 1px solid #FD8A45;
     border-radius: 10px;
@@ -84,17 +82,17 @@
 }
 
 .provider {
+    margin-top: 0.5rem;
     font-weight: 600;
 }
 
 .desc {
-    /* @include font($fontSize: 0.75rem, $px: 0, $py: 0.3rem); */
     padding: 0.3rem 0;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    /*  overflow-y: hidden; */
-    /*  overflow-x: hidden; */
     overflow: hidden;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
 }
 
 .readmore {
@@ -173,7 +171,30 @@
         width: 18rem;
     }
 
+    .title{
+        font-size: 0.8rem;
+    }
+
     .platform {
-        padding: 0;
+        /* margin-top: 0.5rem; */
+        /* font-weight: 600; */
+        font-size: 1rem;
+    }
+    
+    .provider {
+        font-size: 0.9rem;
+        
+    }    
+    .title {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .courseBadges {
+        width: 15.6rem;
+    }
+
+    .desc{
+        font-size: 0.68rem;
     }
 }
