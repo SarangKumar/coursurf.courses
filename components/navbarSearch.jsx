@@ -53,17 +53,17 @@ const NavbarSearch = () => {
     return (
         <nav className='navbarSearch'>
             <div className="one">
-                <Link href='/' className='nav-home'>
-                    <img src="image2.png" alt="logo" height={30} width={30} />
+                <Link aria-label="Home page" href='/' className='nav-home'>
+                    <img src="image2.png" alt="website-logo" height={30} width={30} />
                     <p className='p'>Coursurf</p>
                 </Link>
-                <Link href='/about'><p>About</p></Link>
-                <Link href='/dev'><p>Filter</p></Link>
+                <Link aria-label='About page' href='/about'><p>About</p></Link>
+                <Link aria-label='Filter page' href='/dev'><p>Filter</p></Link>
             </div>
             <div className="two">
                 <div className='search'>
                     <form className='searchLocal' action={`/details/${query.split(' ').join('-')}`}>
-                        <Link href={`/details/${query.split(' ').join('-')}`} className='icon'>
+                        <Link aria-label='Search button' href={`/details/${query.split(' ').join('-')}`} className='icon'>
                             <AiOutlineSearch className='searchIcon' />
                         </Link>
 

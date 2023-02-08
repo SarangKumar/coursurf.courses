@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import React from 'react'
 import { BsInstagram } from 'react-icons/bs'
 import { FiMail } from 'react-icons/fi'

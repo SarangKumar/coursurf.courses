@@ -34,13 +34,13 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <motion.div className='nav-logo'>
-        <Link href='/' className='nav-home'>
-          <img src="image2.png" alt="logo" height={30} width={30} />
+        <Link aria-label="Home page" href='/' className='nav-home'>
+          <img src="image2.png" alt="website-logo" height={30} width={30} />
           <p className='p'>Coursurf</p>
         </Link>
         <HStack className='nav-pagelinks'>
-          <Link href='/about'><p>About</p></Link>
-          <Link href='/dev'><p>Filter</p></Link>
+          <Link aria-label="About page" href='/about'><p>About</p></Link>
+          <Link aria-label="Filter page" href='/dev'><p>Filter</p></Link>
         </HStack>
       </motion.div>
 
@@ -53,10 +53,10 @@ const Navbar = () => {
           <AiOutlineAlignRight id='ham' color='#333' size={26} />
           <RxCross1 id='cross' color='#333' size={26} />
           <motion.div layout animate={{ type: 'spring' }} className="mobile-links" id='mv'>
-            <Link href='/about'>About</Link>
-            <Link href='/dev'>Filter</Link>
-            <Link href='/'>SignUp</Link>
-            <Link href='/'>Login</Link>
+            <Link aria-label='About page' href='/about'>About</Link>
+            <Link aria-label='Filter page' href='/dev'>Filter</Link>
+            <Link aria-label='Signup page' href='/'>SignUp</Link>
+            <Link aria-label='Login page' href='/'>Login</Link>
           </motion.div>
         </div>
       </div>

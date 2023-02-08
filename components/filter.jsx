@@ -59,8 +59,6 @@ const Filter = () => {
         //         clear.style.display = 'none'
         //     }
         // }
-
-
     })
 
     return (

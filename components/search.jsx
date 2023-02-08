@@ -26,7 +26,7 @@ function Search() {
     return (
         <div className={search.center}>
             <form className={search.searchLocal} action={`/details/${query.split(' ').join('-')}`}>
-                <Link href={`/details/${query.split(' ').join('-')}`} className={search.icon}>
+                <Link aria-label="Search button" href={`/details/${query.split(' ').join('-')}`} className={search.icon}>
                     <AiOutlineSearch />
                 </Link>
 

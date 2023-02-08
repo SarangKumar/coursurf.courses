@@ -39,9 +39,8 @@ const Carddetail = () => {
             <div className={cardD.one}>
                 <div className={cardD.top}>
                     <div className={cardD.topLeft}>
-                        <img className={cardD.img}
+                        <img alt='course-logo' className={cardD.img}
                             src="https://ccweb.imgix.net/https%3A%2F%2Fugc.futurelearn.com%2Fuploads%2Fimages%2F47%2F2e%2Fthumbnail_472ee5af-d085-4fc6-8023-d038cc421508.jpg?ar=16%3A9&auto=format&cs=strip&fit=crop&h=315&ixlib=php-3.3.1&w=560&s=66f18efb924bd568f190d19b07af9fc3"
-                            alt="Picture of the author"
                         />
                         {/* <Image className={cardD.img}
                             height={112.5}

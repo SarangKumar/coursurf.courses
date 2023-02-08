@@ -56,10 +56,6 @@
             padding: 0;
         }
 
-        // .nav-pagelinks {
-        //     @include flexBox($cGap: 1rem);
-        //     padding-left: 1rem;
-
         a {
             p {
                 font-size: 0.8rem;
@@ -77,14 +73,10 @@
                 background-color: rgba(232, 232, 232, 0.718);
             }
         }
-
-        // }
     }
 
     .two {
         @include flexBox;
-        // .navbar-links {
-        // @include flexBox($flexDirection: row, $cGap: 2rem, $rGap: 1.1rem);
 
         .buttons {
             border-radius: 3px;
@@ -106,20 +98,17 @@
             .searchLocal {
                 @include flexBox($cGap: 1rem);
                 flex: 1 1 1rem;
-                // max-width: 50rem;
                 padding-left: 1rem;
                 margin: 0 0.5rem;
-                // background: #fbfbfb;
                 border-radius: 0.5rem;
                 min-height: 2.5rem;
                 height: auto;
                 transition: all 0.3s ease;
                 border: 1px solid rgba(199, 199, 199, 0.487);
-
-                &:hover {
-                    border-color: rgba(99, 99, 99, 0.2);
+                
+                &:hover, &:active, &:focus-within {
+                    border: 1px solid rgba(0, 0, 0, 0.3);
                 }
-
 
                 @keyframes funny-icon {
                     0% {
@@ -136,7 +125,6 @@
                         scale: 1;
                     }
                 }
-
 
                 .icon {
                     color: #FD8A45;
@@ -164,7 +152,7 @@
                     // padding-right: 4rem;
                     &::placeholder {
                         font-family: Poppins;
-                        color: #333;
+                        color: $dark;
                         font-size: 0.8rem;
                     }
                 }
@@ -502,7 +490,7 @@ footer {
     .filter {
         min-width: 20rem;
         background-color: $light;
-        margin-bottom: 2rem;
+        margin-bottom: 0.4rem;
 
         //filter starts
         .filter-container {
@@ -745,9 +733,10 @@ footer {
 
         .one {
             justify-content: flex-start;
+
             // width: 100%;
-            .nav-home{
-                .p{
+            .nav-home {
+                .p {
                     display: none
                 }
             }

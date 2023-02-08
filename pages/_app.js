@@ -1,7 +1,6 @@
 import '../styles/globals.css';
 import '../sass/styles.scss'
 import { ChakraProvider } from '@chakra-ui/react';
-import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import { AnimatePresence } from 'framer-motion';
 
@@ -20,7 +19,7 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence mode="wait" initial={false} />
       {/* <Navbar /> */}
       {/* <main className={roboto.className}> */}
-        <Component {...pageProps} />
+      <Component {...pageProps} />
       {/* </main> */}
       <Footer />
     </ChakraProvider>
