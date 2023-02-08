@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
       <AnimatePresence mode="wait" initial={false} />
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <main className={roboto.className}> */}
         <Component {...pageProps} />
       {/* </main> */}

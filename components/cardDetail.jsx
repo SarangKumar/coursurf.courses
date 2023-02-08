@@ -4,6 +4,7 @@ import cardD from '../styles/carddetails.module.css'
 import { AiFillStar } from 'react-icons/ai';
 import { BsStack, BsCalendar3Event } from 'react-icons/bs';
 import { IoSpeedometerOutline } from 'react-icons/io';
+import Image from 'next/image';
 
 const Carddetail = () => {
     const features = [{
@@ -25,14 +26,14 @@ const Carddetail = () => {
         type: 'start-date',
         value: '23 Feb 2023',
         available: true
-    },{
+    }, {
         type: 'comment',
         available: false
     }
     ]
 
     const filterFeatures = features.filter(item => item.available);
-    
+
     return (
         <div className={cardD.container}>
             <div className={cardD.one}>
@@ -42,6 +43,12 @@ const Carddetail = () => {
                             src="https://ccweb.imgix.net/https%3A%2F%2Fugc.futurelearn.com%2Fuploads%2Fimages%2F47%2F2e%2Fthumbnail_472ee5af-d085-4fc6-8023-d038cc421508.jpg?ar=16%3A9&auto=format&cs=strip&fit=crop&h=315&ixlib=php-3.3.1&w=560&s=66f18efb924bd568f190d19b07af9fc3"
                             alt="Picture of the author"
                         />
+                        {/* <Image className={cardD.img}
+                            height={112.5}
+                            width={200}
+                            src="https://ccweb.imgix.net/https%3A%2F%2Fugc.futurelearn.com%2Fuploads%2Fimages%2F47%2F2e%2Fthumbnail_472ee5af-d085-4fc6-8023-d038cc421508.jpg?ar=16%3A9&auto=format&cs=strip&fit=crop&h=315&ixlib=php-3.3.1&w=560&s=66f18efb924bd568f190d19b07af9fc3"
+                            alt="Picture of the author"
+                        /> */}
                     </div>
                     <div className={cardD.topRight}>
                         <div className={cardD.provider}>
@@ -59,7 +66,7 @@ const Carddetail = () => {
                 </div>
                 <div className={cardD.bottom}>
                     <p className={cardD.desc}>
-                        Go from beginner to full stack developer at your pace in this remote bootcamp. Our courses don't stop at graduation, get 1:1 mentorship and career coaching from day one of the course, until the first day of your new job - or your money back.
+                        Go from beginner to full stack developer at your pace in this remote bootcamp. Our courses don&apos;t stop at graduation, get 1:1 mentorship and career coaching from day one of the course, until the first day of your new job - or your money back.
                     </p>
 
                     <div className={cardD.btns}>

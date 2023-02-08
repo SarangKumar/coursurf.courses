@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // import filter from '../styles/filter.module.css'
 import { MdToc } from 'react-icons/md'
 import { BsChevronDown } from 'react-icons/bs'
@@ -7,9 +7,8 @@ const Filter = () => {
 
     useEffect(() => {
         var acc = document.getElementsByClassName("icon");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
+        
+        for (var i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
@@ -49,7 +48,7 @@ const Filter = () => {
 
 
         //set the filter display when the screen size changes
-     
+
         // window.onresize = (e) => {
         //     if (screen.width >= 920) {
         //         body.style.display = 'block';
@@ -62,7 +61,7 @@ const Filter = () => {
         // }
 
 
-    }, [])
+    })
 
     return (
         <div className='filter-container'>
@@ -71,7 +70,7 @@ const Filter = () => {
                 <span id='toggleFilter'><MdToc className='filter-svgfilter' size={24} color={'#0a2540'} />Filter by</span>
                 <button id='clear'>Clear All</button>
             </div>
-            <div className='filter-body' id='filterBody' style={{display: 'block'}}>
+            <div className='filter-body' id='filterBody' style={{ display: 'block' }}>
                 <div id='section1'>
                     <ul>
                         <li>

@@ -90,7 +90,7 @@
 }
 
 .cross {
-	display: none;
+	/* display: none; */
 	cursor: pointer;
 	padding: 0 1rem 0 0.25rem;	
 }
