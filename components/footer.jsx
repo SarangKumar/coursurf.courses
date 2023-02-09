@@ -22,10 +22,10 @@ const Footer = () => {
                     <motion.h2 variants={h1Variants} animate='visible' initial='hidden'>Take ownership of your course</motion.h2>
                     <p>Finally a partner that handles that does something</p>
                     <div className="links">
-                        <motion.a variants={linkVariants} initial='hidden' animate='visible' whileHover='hover' href="/">HOME</motion.a>
-                        <motion.a variants={linkVariants} initial='hidden' animate='visible' whileHover='hover' href="/">SERVICES</motion.a>
-                        <motion.a variants={linkVariants} initial='hidden' animate='visible' whileHover='hover' href="/">CASE STUDY</motion.a>
-                        <motion.a variants={linkVariants} initial='hidden' animate='visible' whileHover='hover' href="/">ABOUT US</motion.a>
+                        <motion.a variants={linkVariants} aria-label='home page' initial='hidden' animate='visible' whileHover='hover' href="/">HOME</motion.a>
+                        <motion.a variants={linkVariants} aria-label='services page' initial='hidden' animate='visible' whileHover='hover' href="/">SERVICES</motion.a>
+                        <motion.a variants={linkVariants} aria-label='case study page' initial='hidden' animate='visible' whileHover='hover' href="/">CASE STUDY</motion.a>
+                        <motion.a variants={linkVariants} aria-label='about page' initial='hidden' animate='visible' whileHover='hover' href="/">ABOUT US</motion.a>
                     </div>
                 </div>
                 <div className="footer-right-bottom">
