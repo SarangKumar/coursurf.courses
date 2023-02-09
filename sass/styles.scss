@@ -302,8 +302,7 @@ footer {
     width: 100%;
     background-color: $dark;
     color: $light;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 
     .footer-left {
         column-span: 1;
@@ -423,6 +422,25 @@ footer {
         gap: 1.5rem;
         transition: $transition;
         margin: 3rem 2rem;
+        align-items: flex-start;
+
+        .universities, .providers, .institutions{
+            @include flexBox($flexDirection: column, $alignItems: flex-start, $rGap: 1rem);
+
+            h1{
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            a{
+                font-size: 0.8rem;
+                font-weight: 600;
+                border-radius: 10px;
+                border: 2px solid $primary;
+                padding: 0.3rem 1.2rem;
+                color: $dark;
+            }
+
+        }
     }
 }
 
@@ -508,7 +526,13 @@ footer {
                 justify-content: space-between;
                 align-items: center;
 
+                .filter-by{
+                    width: 8rem;
+                    
+                }
+                
                 span {
+                    @include flexBox;
                     .filter-svgfilter {
                         display: inline-block;
                         margin-right: 0.4rem;

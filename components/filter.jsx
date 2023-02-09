@@ -64,8 +64,8 @@ const Filter = () => {
     return (
         <div className='filter-container'>
             <div className='filter-header'>
-                <span><MdToc className='filter-svgfilter' size={24} color={'#0a2540'} />Filter by</span>
-                <span id='toggleFilter'><MdToc className='filter-svgfilter' size={24} color={'#0a2540'} />Filter by</span>
+                <span className='filter-by'><MdToc style={{display: 'inline'}} className='filter-svgfilter' size={24} color={'#0a2540'} /><p>Filter by</p></span>
+                <span className='filter-by'id='toggleFilter'><MdToc className='filter-svgfilter' size={24} color={'#0a2540'} /><p>Filter by</p></span>
                 <button id='clear'>Clear All</button>
             </div>
             <div className='filter-body' id='filterBody' style={{ display: 'block' }}>
