@@ -533,7 +533,6 @@ footer {
 .search-head {
     font-family: $fontMain, 'sans-serif';
     margin: 1rem 10%;
-    // background-color: red;
     font-size: 2.2rem;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(199, 199, 199, 0.487);
@@ -571,9 +570,7 @@ footer {
             font-family: Poppins, 'sans-serif';
             background-color: $light;
 
-            /* margin: 1rem; */
             .filter-header {
-                margin: 0.8rem 1rem;
                 display: flex;
                 column-gap: 0.5rem;
                 font-size: 0.85rem;
@@ -583,7 +580,7 @@ footer {
 
                 .filter-by {
                     width: 8rem;
-
+                    // background-color: rgba(199, 199, 199, 0.487);
                 }
 
                 span {
@@ -596,6 +593,7 @@ footer {
                 }
 
                 #toggleFilter {
+                    background-color: rgba(199, 199, 199, 0.487);
                     display: none;
                 }
 
@@ -876,6 +874,11 @@ footer {
 
     .search-head {
         font-size: 1.5rem;
+        @include flexBox($justifyContent: space-between);
+        .search-count{
+            font-size: 0.65rem;
+            font-weight: 600;
+        }
     }
 
 
@@ -900,15 +903,20 @@ footer {
 
                     #toggleFilter {
                         display: inline-block;
-                        background-color: rgba(243, 243, 243, 0.3);
-                        // background-color: red;
-                        padding: 0.4rem 0.5rem;
+                        background-color: rgba(199, 199, 199, 0.487);
+                        // padding: 0.4rem 0.5rem;
                         border-radius: 5px;
                         cursor: pointer;
-                        transition: all 0.3s eases;
+                        transition: all 0.3s ease;
+                        @include flexBox($cGap: 0.3rem);
+                        padding: 0.3rem 0;
 
                         &:hover {
                             background-color: rgba(206, 206, 206, 0.3);
+                        }
+
+                        .filter-svgfilter {
+                            p {}
                         }
                     }
 
@@ -975,7 +983,7 @@ footer {
         .two {
             width: 100%;
 
-            .mobile-view{
+            .mobile-view {
                 display: block;
                 // position: absolute;
                 // transform: translateY(-2rem);

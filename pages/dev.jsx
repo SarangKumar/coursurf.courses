@@ -16,11 +16,13 @@ const dev = () => {
             </Head>
             <NavbarSearch />
             <div className='search-head'>
-                Search result for <b>Python</b>
-
-                <div className='search-count'>
-                    {'1515'} courses
+                <div>
+                    Search result for <b>Python</b>
                 </div>
+
+                    <div className='search-count'>
+                        {'1515'} courses
+                    </div>
             </div>
             <div className='search-dir'>
                 <div className='filter'>
