@@ -146,7 +146,7 @@
             // width: 100%
 
             .searchLocal {
-                @include flexBox($cGap: 1rem);
+                @include flexBox($cGap: 0rem);
                 flex: 1 1 1rem;
                 padding-left: 1rem;
                 margin: 0 0.5rem;
@@ -198,7 +198,7 @@
                     color: #292929;
                     font-size: 0.8rem;
                     font-family: Poppins;
-                    min-width: 16rem;
+                    min-width: 15rem;
 
                     // margin-right: 5rem;
                     // padding-right: 4rem;
@@ -875,7 +875,8 @@ footer {
     .search-head {
         font-size: 1.5rem;
         @include flexBox($justifyContent: space-between);
-        .search-count{
+
+        .search-count {
             font-size: 0.65rem;
             font-weight: 600;
         }
@@ -983,7 +984,7 @@ footer {
         .two {
             display: grid;
             grid-template-columns: 1fr 20px;
-            grid-column-gap:1rem ;
+            grid-column-gap: 1rem;
             width: 100%;
 
             .mobile-view {
@@ -1017,8 +1018,13 @@ footer {
                         // width: 100%;
 
                         &::placeholder {
-                            font-size: 0.8rem;
+                            font-size: 0.7rem;
                         }
+                    }
+
+                    .input {
+                        // margin: 3rem;
+                        min-width: 10rem;
                     }
                 }
             }
