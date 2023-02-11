@@ -78,6 +78,7 @@
     .two {
         @include flexBox;
 
+
         .buttons {
             border-radius: 3px;
             cursor: pointer;
@@ -88,6 +89,55 @@
             &:hover {
                 color: #333;
                 border: 2px solid $primary;
+            }
+        }
+
+        .mobile-view {
+            transition: $transition;
+            display: none;
+            top: -1rem;
+            // transform: translateY(-3rem);
+
+            #switch,
+            #cross {
+                display: none;
+                cursor: pointer;
+            }
+
+            #ham {
+                cursor: pointer;
+            }
+
+            .mobile-links {
+                border-top: 1px solid $primary;
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 5rem;
+                width: 100%;
+                // min-height: calc( 50vh - 3.84rem );
+                background-color: $light;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                font-weight: 600;
+                -webkit-box-shadow: 0 10px 10px -10px #000000;
+                -moz-box-shadow: 0 10px 10px -10px #000000;
+                box-shadow: 0 10px 10px -10px #000000;
+                transition: $transition;
+
+                a {
+                    @include flexBox;
+                    padding: 0.3rem 1.2rem;
+                    margin: 4px;
+                    border: 2px solid transparent;
+                    border-radius: 5px;
+                    font-size: 0.9rem;
+
+                    &:hover {
+                        color: #333;
+                        border: 2px solid $primary;
+                    }
+                }
             }
         }
 
@@ -105,8 +155,10 @@
                 height: auto;
                 transition: all 0.3s ease;
                 border: 1px solid rgba(199, 199, 199, 0.487);
-                
-                &:hover, &:active, &:focus-within {
+
+                &:hover,
+                &:active,
+                &:focus-within {
                     border: 1px solid rgba(0, 0, 0, 0.3);
                 }
 
@@ -424,14 +476,17 @@ footer {
         margin: 3rem 2rem;
         align-items: flex-start;
 
-        .universities, .providers, .institutions{
+        .universities,
+        .providers,
+        .institutions {
             @include flexBox($flexDirection: column, $alignItems: flex-start, $rGap: 1rem);
 
-            h1{
+            h1 {
                 font-size: 1.2rem;
                 font-weight: 500;
             }
-            a{
+
+            a {
                 font-size: 0.8rem;
                 font-weight: 600;
                 border-radius: 10px;
@@ -526,13 +581,14 @@ footer {
                 justify-content: space-between;
                 align-items: center;
 
-                .filter-by{
+                .filter-by {
                     width: 8rem;
-                    
+
                 }
-                
+
                 span {
                     @include flexBox;
+
                     .filter-svgfilter {
                         display: inline-block;
                         margin-right: 0.4rem;
@@ -918,6 +974,12 @@ footer {
 
         .two {
             width: 100%;
+
+            .mobile-view{
+                display: block;
+                // position: absolute;
+                // transform: translateY(-2rem);
+            }
 
             .search {
                 width: 100%;

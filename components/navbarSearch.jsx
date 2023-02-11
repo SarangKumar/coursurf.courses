@@ -61,6 +61,17 @@ const NavbarSearch = () => {
                 <Link aria-label='Filter page' href='/dev'><p>Filter</p></Link>
             </div>
             <div className="two">
+                <div className='mobile-view' onClick={mobileView}>
+                    <p id='switch'></p>
+                    <AiOutlineAlignRight id='ham' color='#333' size={26} />
+                    <RxCross1 id='cross' color='#333' size={26} />
+                    <motion.div layout animate={{ type: 'spring' }} className="mobile-links" id='mv'>
+                        <Link aria-label='About page' href='/about'>About</Link>
+                        <Link aria-label='Filter page' href='/dev'>Filter</Link>
+                        <Link aria-label='Signup page' href='/'>SignUp</Link>
+                        <Link aria-label='Login page' href='/'>Login</Link>
+                    </motion.div>
+                </div>
                 <div className='search'>
                     <form className='searchLocal' action={`/details/${query.split(' ').join('-')}`}>
                         <Link aria-label='Search button' href={`/details/${query.split(' ').join('-')}`} className='icon'>
@@ -73,15 +84,6 @@ const NavbarSearch = () => {
                 </div>
                 <div className="buttons">Sign-up</div>
                 <div className="buttons">Login</div>
-                {/* <p id='switch'></p>
-                <AiOutlineAlignRight id='ham' color='#333' size={26} />
-                <RxCross1 id='cross' color='#333' size={26} />
-                <div layout animate={{ type: 'spring' }} className="mobile-links" id='mv'>
-                    <Link href='/about'>About</Link>
-                    <Link href='/dev'>Filter</Link>
-                    <Link href='/'>SignUp</Link>
-                    <Link href='/'>Login</Link>
-                </div> */}
             </div>
         </nav>
     )
