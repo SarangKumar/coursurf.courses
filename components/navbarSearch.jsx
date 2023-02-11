@@ -61,6 +61,17 @@ const NavbarSearch = () => {
                 <Link aria-label='Filter page' href='/dev'><p>Filter</p></Link>
             </div>
             <div className="two">
+                
+                <div className='search'>
+                    <form className='searchLocal' action={`/details/${query.split(' ').join('-')}`}>
+                        <Link aria-label='Search button' href={`/details/${query.split(' ').join('-')}`} className='icon'>
+                            <AiOutlineSearch className='searchIcon' />
+                        </Link>
+
+                        <input type="text" autoFocus className='input' ref={inputRef} placeholder="Search from over 10,000+ courses" onChange={e => setQuery(e.target.value)} />
+                        <span className='cross'><RxCross2 onClick={clear} className='crossSvg' /></span>
+                    </form>
+                </div>
                 <div className='mobile-view' onClick={mobileView}>
                     <p id='switch'></p>
                     <AiOutlineAlignRight id='ham' color='#333' size={26} />
@@ -71,16 +82,6 @@ const NavbarSearch = () => {
                         <Link aria-label='Signup page' href='/'>SignUp</Link>
                         <Link aria-label='Login page' href='/'>Login</Link>
                     </motion.div>
-                </div>
-                <div className='search'>
-                    <form className='searchLocal' action={`/details/${query.split(' ').join('-')}`}>
-                        <Link aria-label='Search button' href={`/details/${query.split(' ').join('-')}`} className='icon'>
-                            <AiOutlineSearch className='searchIcon' />
-                        </Link>
-
-                        <input type="text" autoFocus className='input' ref={inputRef} placeholder="Search from over 10,000+ courses" onChange={e => setQuery(e.target.value)} />
-                        <span className='cross'><RxCross2 onClick={clear} className='crossSvg' /></span>
-                    </form>
                 </div>
                 <div className="buttons">Sign-up</div>
                 <div className="buttons">Login</div>
