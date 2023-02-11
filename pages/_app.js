@@ -4,6 +4,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 import Footer from '../components/footer';
 import { AnimatePresence } from 'framer-motion';
 
+import { Analytics } from '@vercel/analytics/react';
+
 // import { Poppins } from '@next/font/google'
 
 // const roboto = Poppins({
@@ -22,6 +24,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       {/* </main> */}
       <Footer />
+      <Analytics />
     </ChakraProvider>
   );
 }

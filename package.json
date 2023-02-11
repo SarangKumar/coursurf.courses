@@ -15,6 +15,7 @@
     "@next/font": "^13.1.6",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@vercel/analytics": "^0.1.8",
     "axios": "^1.2.2",
     "framer-motion": "^8.5.2",
     "json5": "^2.2.3",
